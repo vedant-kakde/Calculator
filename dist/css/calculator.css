@@ -9,7 +9,8 @@
   --symbol-color: #ff7043;
   --symbol-hover-color: #ff8a65;
   --symbol-dark-color: #f4511e;
-  --slide-circle: #000
+  --slide-circle: #000;
+  --background-image: url('../../images/light.jpg');
 }
 
 [data-theme="dark"] {
@@ -23,7 +24,8 @@
   --symbol-color: transparent;
   --symbol-hover-color: #ff5722;
   --symbol-dark-color: #f4511e;
-  --slide-circle: #fff
+  --slide-circle: #fff;
+  --background-image: url('../../images/dark.jpg');
 }
 
 * {
@@ -35,13 +37,15 @@
 body {
   font-family: "lato";
 }
+
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: var(--primary-color);
+  background: var(--background-image);
+  background-size: cover;
 }
 
 .calculator {
